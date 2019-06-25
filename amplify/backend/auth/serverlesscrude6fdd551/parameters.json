@@ -1,0 +1,68 @@
+{
+    "identityPoolName": "serverlesscrude6fdd551_identitypool_e6fdd551",
+    "allowUnauthenticatedIdentities": false,
+    "lambdaLogPolicy": "server_e6fdd551_lambda_log_policy",
+    "openIdLambdaRoleName": "server_e6fdd551_openid_lambda_role",
+    "openIdRolePolicy": "server_e6fdd551_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "server_e6fdd551_openid_lambda_iam_policy",
+    "openIdLogPolicy": "server_e6fdd551_openid_lambda_log_policy",
+    "userPoolName": "serverlesscrude6fdd551_userpool_e6fdd551",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "servere6fdd551_sns-role",
+    "roleExternalId": "servere6fdd551_role_external_id",
+    "policyName": "servere6fdd551-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Your verification code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "servere6fdd551_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+        "email"
+    ],
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "servere6fdd551_totp_lambda_role",
+    "mfaLambdaLogPolicy": "servere6fdd551_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "servere6fdd551_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "servere6fdd551_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "servere6fdd551_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "servere6fdd551_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "servere6fdd551_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "resourceName": "serverlesscrude6fdd551",
+    "authSelections": "identityPoolAndUserPool",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    },
+    "unauthRoleArn": {
+        "Fn::GetAtt": [
+            "UnauthRole",
+            "Arn"
+        ]
+    },
+    "useDefault": "default"
+}

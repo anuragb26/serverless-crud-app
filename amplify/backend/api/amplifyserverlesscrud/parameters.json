@@ -1,0 +1,10 @@
+{
+    "AppSyncApiName": "amplifyserverlesscrud",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authserverlesscrude6fdd551",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "serverless": {
+        "awscloudformation": {
+            "AuthRoleName": "serverless-crud-serverless-20190625141800-authRole",
+            "UnauthRoleArn": "arn:aws:iam::720564884544:role/serverless-crud-serverless-20190625141800-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::720564884544:role/serverless-crud-serverless-20190625141800-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "serverless-crud-serverless-20190625141800-deployment",
+            "UnauthRoleName": "serverless-crud-serverless-20190625141800-unauthRole",
+            "StackName": "serverless-crud-serverless-20190625141800",
+            "StackId": "arn:aws:cloudformation:us-east-1:720564884544:stack/serverless-crud-serverless-20190625141800/f1324b20-9725-11e9-b42f-0a55ab548dc0"
+        },
+        "categories": {
+            "auth": {
+                "serverlesscrude6fdd551": {}
+            }
+        }
+    }
+}
